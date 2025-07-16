@@ -2,7 +2,7 @@ import os
 import openai
 from telegram.ext import Updater, MessageHandler, Filters
 
-TELEGRAM_TOKEN = os.environ['7271064987:AAFLi0xAoIpV-uYfrJh5R2iVqhxWnbTXfCU']
+TELEGRAM_TOKEN = os.environ['8086492640:AAGEBF1QNp8cicnNaJzcjQ_cIVdKifo-Hws']
 OPENAI_API_KEY = os.environ['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']
 
 openai.api_key = OPENAI_API_KEY
