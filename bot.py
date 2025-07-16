@@ -11,7 +11,7 @@ client = OpenAI(api_key=OPENAI_API_KEY)
 async def chatgpt_reply(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user_text = update.message.text
     completion = client.chat.completions.create(
-        model="gpt-3.5-turbo",
+        model="gpt-4o",   # <-- Diqqat: aynan shu joyda!
         messages=[{"role": "user", "content": user_text}]
     )
     reply = completion.choices[0].message.content
